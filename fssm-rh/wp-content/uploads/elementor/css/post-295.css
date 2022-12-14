@@ -1,0 +1,493 @@
+.elementor-295 .elementor-element.elementor-element-eab0b1e .elementor-button{background-color:#61CE70;}.elementor-295 .elementor-element.elementor-element-eab0b1e .elementor-button:hover, .elementor-295 .elementor-element.elementor-element-eab0b1e .elementor-button:focus{background-color:#398F9F;}/* Start custom CSS for html, class: .elementor-element-9fd5383 *//*---------------------------------ROOT-VARIABLES----------------------------------*/
+
+:root {
+    --color-primary:#7380ec;
+    --color-danger:#ff7782;
+    --color-success:#41f1b6;
+    --color-warning:#ffbb55;
+    --color-white:#fff;
+    --color-info-dark:#7d8da1;
+    --color-info-light:#7380ec;
+    --color-dark:#363949;
+    --color-ligth:rgba(132,139,200,0.18);
+    --color-primary-variante:#111e88;
+    --color-dark-variante:#677483;
+    --color-background:#f6f6f9;
+    
+    --card-border-radius:2rem;
+    --border-radius-1:0.4rem;
+    --border-radius-2:0.8rem;
+    --border-radius-3:1.2rem;
+    
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+    
+    --box-shadow: 0 2rem 3rem var(--color-light);
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        appearance: none;
+        border: 0;
+        text-decoration: none;
+        list-style: none;
+        box-sizing: border-box;
+    }
+    
+    html {
+        font-size: 14px;
+    }
+    
+    body {
+        width: 100vw;
+        height: 100vh;
+        font-family: poppins, sans-serif;
+        font-size: 0.88rem;
+        background: var(--color-background);
+        user-select: none;
+        overflow-x: hidden;
+        color: var(--color-dark);
+    }
+    
+    .container{
+    
+        display: grid;
+        width: 96%;
+        margin: 0 auto;
+       
+        
+        gap: 1.8rem;
+        grid-template-columns: 14rem auto 23rem;
+    }
+    
+    
+    
+    a {
+        color: var(--color-dark);
+    }
+    
+    img {
+        display: block;
+        width: 100%;
+    }
+    
+    h3 {
+        font-size: 0.87rem;
+    }
+    
+    h4 {
+        font-size: 0.8rem;
+    }
+    
+    h4 {
+        font-size: 0.77rem;
+    }
+    
+    small {
+        font-size: 0.75rem;
+    }
+    
+    .profile-photo {
+        width: 2.8rem;
+        height: 2.8rem;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    
+    .text-muted {
+        color :var(--color-info-dark);
+    }
+    
+    p {
+        color: var(--color-dark-variante);
+    }
+    
+    b{
+        color: var(--color-dark);
+    }
+    
+    .primary {
+        color: var(--color-primary);
+    }
+    
+    .danger {
+        color: var(--color-danger);
+    }
+    
+    .success {
+        color: var(--color-success);
+    }
+    
+    .warning {
+        color: var(--color-warning);
+    }
+    
+    aside  {
+         height: 100vh;
+         
+    }
+    
+    aside .top{
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 1.4rem;
+    }
+    
+    
+    aside .logo{
+        display: flex;
+        gap: 0.8rem;
+    }
+    
+    aside .logo img{
+        width: 4rem;
+        height: 4rem;
+        margin-left: 2rem;
+    
+    }
+    
+    
+    /*--------------SIDEBAR---------------*/
+    
+    
+    aside .sidebar {
+        background: white;
+        display: flex;
+        flex-direction: column;
+        height: 86vh;
+        position : relative;
+        top: 3rem;
+    }
+    
+    aside h3{
+        font-weight: 500;
+        font-size: 1rem;
+    }
+    
+    aside .sidebar a {
+        display: flex;
+        color: var(--color-info-dark);
+        margin-left: -7rem;
+        gap: 1rem;
+        align-items: center;
+        position: relative;
+        height: 3.7rem;
+        transition: all 300ms ease;
+    }
+    
+    aside .sidebar a span{
+        font-size: 2rem;
+        transition: all 300ms ease;
+    }
+    
+    aside .sidebar a:last-child{
+        position: absolute;
+        bottom: 12rem;
+        width: 100%;
+    }
+    
+    aside .sidebar a.active{
+        background: var(--color-light);
+        color: var(--color-dark-variante);
+        margin-left: 0;
+    }
+    
+    aside .sidebar a.active:before{
+        content: "";
+        width: 6px;
+        height: 100%;
+        background: var(--color-white);
+    }
+    
+    aside .sidebar a.active span {
+        color: var(--color-primary);
+       margin-left: -8rem;
+    }
+    
+    aside .sidebar a:hover {
+        color: var(--color-primary);
+    }
+    
+    aside .sidebar a:hover span {
+        margin-left: 1rem;
+    }
+    
+    .search{
+        position: relative;
+        width: 400px;
+        margin: 0 10px;
+    
+    }
+    
+    .search label {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        bottom: 5rem;
+        background: transparent;
+    }
+    
+    .search label input{
+        width: 150%;
+        height: 40px;
+        border-radius: 40px;
+        padding: 5px 20px;
+        outline: none;
+        border: 1px solid var(--color-info-dark);
+        background-color: #eef6ff;
+        
+    }
+    
+    .search label .material-icons-sharp{
+        display: inline-block;
+        position: absolute;
+        left: 40rem;
+        bottom: 10rem;
+        color: var(--color-dark-variante);
+    }
+    
+    .statis{
+        position: absolute;
+        bottom: 48rem;
+        left:18rem ;
+        color: var(--color-dark-variante);
+    }
+    
+    .emp{
+        position: absolute;
+        bottom: 27rem;
+        left:16rem ;
+        color: var(--color-dark-variante);
+    
+    }
+    
+    .user-wrapper{
+        display: inline-block;
+        width: 35px;
+        height: 43px;
+        clip-path: circle();
+        position: absolute;
+        left: 89rem;
+        top: 1rem;
+    
+    }
+    
+    .admin{
+        position: absolute;
+        left: 3rem;
+        top: 2rem;
+    }
+    
+    
+    /*--------------MAIN-----l3ibat khdrin----------*/
+    
+    main{
+        margin-top: 3.5rem;
+    }
+    main .insights{
+        display: grid;
+        grid-template-columns: repeat(4,5fr);
+        gap: 3rem;
+        justify-content: center;
+    }
+    
+    main .insights > div {
+        background: var(--color-success);
+        padding-top: 3rem;
+        padding-bottom:  3rem;
+        padding-left: 7rem;
+        padding-right: 7rem;
+        border-radius: 13px;
+        /*border-radius: var(--card-border-radius);*/
+        margin-top: -2rem;
+        box-shadow: var(--box-shadow);
+        transition: all 300ms ease;
+    
+    }
+    
+    main .insights > div:hover {
+        box-shadow: none;
+    
+    }
+    
+    main .insights small{
+        display: inline-block;
+        position: absolute;
+        
+        top: 8.8rem;
+    }
+    
+    #small2{
+        display: inline-block;
+        position: absolute;
+        top: 22rem;
+        right: 71rem;
+        color: var(--color-dark-variante);
+    }
+    
+    /*--------------search 22----------*/
+    
+    #search{
+        
+        position: relative;
+        width: 400px;
+        margin: 0 10px;
+    
+    }
+    
+    #search label {
+        display: inline-block;
+        position: relative;
+        width: 90%;
+        bottom: -3.4rem;
+        left: 25rem;
+        background: transparent;
+    }
+    
+    #search label #input{
+        width: 95%;
+        height: 40px;
+        border-radius: 40px;
+        padding: 5px 15px;
+        outline: none;
+        border: 1px solid var(--color-info-dark);
+        background-color: #eef6ff;
+        
+        
+    }
+    
+    #search label .material-icons-sharp{
+        display: inline-block;
+        position: absolute;
+        left: 22rem;
+        bottom: 0.4rem;
+        color: var(--color-dark-variante);
+    }
+    
+    .filter{
+        position: relative;
+        width: 400px;
+        margin: 0 10px;
+        
+    
+        
+    }
+    .filter .material-icons-sharp{
+        position: absolute;
+        left: 50rem;
+        top: 1rem;
+        
+        
+        
+    }
+    
+    .h3 {
+        position: absolute;
+        left: 52rem;
+        top: 1.5rem;
+        
+    }
+    
+    .main .recent-orders {
+        margin-top: 2rem;
+    
+    }
+    
+     #show-all {
+        text-align: center;
+        display: block;
+        margin: 1rem auto;
+        color: var(--color-primary);
+        position: absolute;
+        top: 45rem;
+        left: 53rem;
+    
+    }
+    
+    
+    
+    main .recent-orders table{
+        background: var(--color-white);
+        width: 85%;
+        height: 5vh;
+        border-radius: var(--card-border-radius);
+        margin-top: 1rem;
+        margin-left: -1.5rem;
+        text-align: center;
+        box-shadow: var(--box-shadow);
+        transition: all 300ms ease;
+        font-size: 13px;
+        
+        position: absolute;
+        top: 17rem;
+        
+        
+    
+    }
+    
+    main .recent-orders table:hover{
+        box-shadow: none;
+        height: 10vh;
+    
+    }
+    
+    main table tbody td {
+        height: 2.8rem;
+        border-bottom: 1px solid var(--color-ligth);
+        color: var(--color-dark-variante);
+        
+    }
+    
+    main table tbody tr:last-child td {
+        
+       
+        
+    }
+    
+    /*main .recent-orders a{
+        text-align: center;
+        display: block;
+        margin: 1rem auto;
+        color: var(--color-primary);
+        position: absolute;
+        top: 45rem;
+    
+    }*/
+    
+    .Employes-de-mois {
+        position: absolute;
+        left: 80rem;
+        bottom: 35rem;
+    }
+    
+#small{
+    position: absolute;
+    top: 12rem;
+    left: 18rem;
+    color: var(--color-dark-variante);
+}    
+
+button {
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 8px;
+    
+    background-color: #bfffea;
+}
+
+td button:nth-child(1){
+    background-color: #bfffea;
+    
+}
+td button:nth-child(2){
+    color: #9c0b17;
+    
+}
+td button:nth-child(3){
+    color: #9c0b17;
+    
+}/* End custom CSS */
